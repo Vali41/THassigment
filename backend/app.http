@@ -1,0 +1,24 @@
+GET http://localhost:3000/tasks
+
+###
+
+POST http://localhost:3000/tasks 
+Content-Type: application/json
+
+{
+  "title": "New ",
+  "description": "This is a new task.",
+  "priority": "Medium",
+  "status": "In Progress",
+  "due_date": "2023-12-31"
+}
+
+###
+
+PATCH  http://localhost:3000/tasks/5
+Content-Type: application/json  
+{
+  "priority": "High",
+  "status": "Completed",
+  
+}
